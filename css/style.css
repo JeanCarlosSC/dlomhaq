@@ -45,15 +45,16 @@ body {
 h1 {
     margin: 1.6rem;
     font-size: 3.4rem;
-    text-align: center;
 }
 h2 {
     font-size: 2.4rem;
 }
 h3 {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
 }
-
+h1, h2 {
+    text-align: center;
+}
 /* navegacion principal */
 .nav-bg {
     background-color: var(--secundario);
