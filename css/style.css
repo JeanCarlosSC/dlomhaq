@@ -47,6 +47,10 @@ body {
     max-width: 100%;
 }
 
+.white {
+    color: #ffffff;
+}
+
 /* tipografia */
 h1 {
     margin: 1.6rem;
