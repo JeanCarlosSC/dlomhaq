@@ -4,73 +4,221 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dlomhaq</title>
-    
-    <link rel="preload" href="css/normalize.css" as="style">
-    <link rel="stylesheet" href="css/normalize.css">
+    <title>Rock & EDM Festival</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
 
-    <link rel="preload" href="css/style.css" as="style">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="build/css/app.css">
 </head>
 <body>
-    <header>
-        <h1>Dlomhaq</h1>
+
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <h1>Rock & EDM Festival</h1>
+
+            <nav class="navegacion-principal">
+                <a  href="#lineup">Line Up</a>
+                <a href="#galeria">Galería</a>
+                <a href="#boletos">Boletos</a>
+            </nav>
+        </div>
     </header>
 
-    <div class="nav-bg">
-        <nav class="navegacion-principal contenedor">
-            <a href="index.html">Inicio</a>
-            <a href="html/guia.html">Guía</a>
-            <a href="html/bitacora.html">Bitácora</a>
-            <a href="html/about.html">Sobre mí</a>
-        </nav>
+    <div class="video">
+        <div class="overlay">
+            <div class="contenedor contenido-video">
+                <h2>Rock & EDM Festival</h2>
+                <p>Julio 2022, Guadalajara, México.</p>
+            </div>
+        </div>
+        <video autoplay muted loop>
+            <source src="video/concierto.mp4" type="video/mp4">
+            <source src="video/concierto.ogg" type="video/ogg">
+            <source src="video/concierto.webm" type="video/webm">
+        </video>
     </div>
-
-    <section class="hero hero__inicio">
-        <div class="contenido-hero">
-            <h2>Inicio</h2>
-            <p>Bienvenido a Dlomhaq, aquí podrás acceder a mi experiencia personal con los sueños.</p>
+    
+    <section class="contenedor sobre-festival">
+        <div class="imagen">
+            <picture>
+                <source srcset="build/img/imagen_vocalista.avif" type="image/avif">
+                <source srcset="build/img/imagen_vocalista.webp" type="image/webp">
+                <img loading="lazy" width="200" height="300" src="build/img/imagen_vocalista.jpg" alt="imagen vocalista">
+            </picture>
+        </div>
+        <div class="contenido-festival">
+            <h2>Rock & EDM Festival</h2>
+            <p class="fecha">Julio 2022, Guadalajara, México</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor expedita nulla dignissimos repellendus corporis excepturi enim eum? Tenetur rerum excepturi natus dicta ullam sit, fuga asperiores maxime distinctio rem doloremque?</p>
         </div>
     </section>
 
-    <main class="contenedor sombra main">
-        <section>
-            <h2>Introducción</h2>
-            <p>"Los sueños son una reserva de conocimiento y experiencia y sin embargo, los hemos pasado por alto como vehículo para explorar la realidad. En el estado de sueño nuestros cuerpos descansan, y aún así podemos ver y oír, movernos y ser incluso capaces de aprender. Cuando hacemos buen uso del estado del sueño, es casi como si nuestras vidas se duplicasen: en lugar de 100 años, vivimos doscientos." - Tarthang Tulku</p>
-            <p>"Un error fundamental del ser humano es pensar que está vivo, cuando meramente se ha quedado dormido en la sala de espera de la vida." - Shah</p>
-            <p>"Nuestra más verdadera vida es cuando estamos despiertos en sueños" - Thoreau</p>
-        </section>
+    <section id="lineup" class="lineup">
+        <h3>Line Up</h3>
 
-        <section>
-            <h2>Propósito Dlomhaq</h2>
-            <p>Realizar investigación subjetiva acerca de los sueños e inspirar a otras personas a intentarlo.</p>
-        </section>
+        <p class="dia">Viernes 21</p>
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario rock bg-amarillo">
+                <p class="nombre-escenario">Escenario Rock</p>
 
-        <section>
-            <h2>Guía</h2>
-            <p>Información adquirida a través de la experimentación, investigación y perspectiva propia.</p>
-        </section>
+                <ul class="calendario">
+                    <li>
+                        24:00 | <span>Metallica</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Pearl Jam</span>
+                    </li>
+                    <li>
+                        20:00 | <span>KoRn</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Muse</span>
+                    </li>
+                    <li>
+                        18:00 | <span>Breaking Benjamin</span>
+                    </li>
+                    <li>
+                        17:00 | <span>30 Seconds to Mars</span>
+                    </li>
+                </ul>
+            </div> <!--.escenario-->
 
-        <section>
-            <h2>Bitácora</h2>
-            <p>Registro de experiencias relacionadas con el estudio subjetivo de los sueños.</p>
-        </section>
-        
-        <section>
-            <h2>Sobre mí</h2>
-            <p>Experiencia en el asunto.</p>
-        </section>
+            <div class="escenario edm bg-verde">
+                <p class="nombre-escenario">Escenario EDM</p>
 
-        <section>
-            <h2>Referencias</h2>
-            <p>Stephen LaBerge, Ph.D. Howard Rheingold - Explorando el mundo de los sueños lúcidos.</p>
-        </section>
+                <ul class="calendario">
+                    <li>
+                        24:00 | <span>Deadmau5</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Tïesto</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Hardwell</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Dash Berlin</span>
+                    </li>
+                    
+                    <li>
+                        18:00 | <span>Fedde Legrand</span>
+                    </li>
+                    <li>
+                        17:00 | <span>Audien</span>
+                    </li>
+                </ul>
+            </div> <!--.escenario-->
+        </div> <!--.escenarios-contenedor -->
 
-        <img src="img/inicio_main.jpg" class="imagen" alt="Ilusión óptica con escaleras">
-    </main>
 
-    <footer>
-        <p>Todos los derechos reservados 2021. Jean Carlos Santoya Cabrera</p>
+        <p class="dia">Sábado 22</p>
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario rock bg-verde">
+                <p class="nombre-escenario">Escenario Rock</p>
+
+                <ul class="calendario">
+                    <li>
+                        24:00 | <span>Red Hot Chili Peppers</span>
+                    </li>
+                    <li>
+                        22:00 | <span>The Killers</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Deftones</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Limp Bizkit</span>
+                    </li>
+                    
+                    <li>
+                        18:00 | <span>Papa Roach</span>
+                    </li>
+                    <li>
+                        17:00 | <span>Lamb of God</span>
+                    </li>
+                </ul>
+            </div> <!--.escenario-->
+
+            <div class="escenario edm bg-amarillo">
+                <p class="nombre-escenario">Escenario EDM</p>
+
+                <ul class="calendario">
+                    <li>
+                        24:00 | <span>Paul Van Dyk</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Armin Van Buuren</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Above & Beyond</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Eric Prdyz</span>
+                    </li>
+
+                    <li>
+                        18:00 | <span>Ferry Corsten</span>
+                    </li>
+                    <li>
+                        17:00 | <span>Vini Vici</span>
+                    </li>
+                </ul>
+            </div> <!--.escenario-->
+        </div> <!--.escenarios-contenedor -->
+
+    </section>
+
+    <section id="galeria" class="galeria contenedor">
+        <h3>Galería</h3>
+
+        <ul class="galeria-imagenes"></ul>
+    </section>
+
+    <section id="boletos" class="boletos bg-verde">
+        <h3>Boletos</h3>
+
+        <div class="contenedor contenedor-boletos">
+            <div class="basico pase">
+                <p class="nombre-pase">Pase 1 Día</p>
+                <header class="pase-header">
+                    <p>Incluye</p>
+                </header>
+                <div class="pase-body">
+                    <ul>
+                        <li>Acceso a ambos escenarios</li>
+                        <li>Comida y Bebida</li>
+                    </ul>
+                </div>
+                <footer class="pase-footer">
+                    <p>$100</p>
+                </footer>
+            </div>
+            <div class="premium pase">
+                <p class="nombre-pase">Pase 2 Días</p>
+                <header class="pase-header">
+                    <p>Incluye</p>
+                </header>
+                <div class="pase-body">
+                    <ul>
+                        <li>Acceso a ambos escenarios</li>
+                        <li>Comida y Bebida</li>
+                        <li>Camisa del Evento</li>
+                        <li>Acceso VIP</li>
+                    </ul>
+                </div>
+                <footer class="pase-footer">
+                    <p>$180</p>
+                </footer>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <p>Rock & EDM Festival. Todos los derechos reservados</p>
     </footer>
+
+
+    <script src="build/js/app.js"></script>
 </body>
 </html>
